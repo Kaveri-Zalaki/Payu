@@ -1,0 +1,26 @@
+
+      <div class="row mt-5 justify-content-center" data-aos="fade-up">
+        <div class="col-lg-10">
+          <form  name="form" #f="ngForm" (ngSubmit) = "responseformsubmit()">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control"  placeholder="Your Name" required [(ngModel)] ="form.name" #name="ngModel">
+              </div>
+              
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email"  placeholder="Your Email" required [(ngModel)] ="form.email" #email = "ngModel">
+              </div>
+        
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required [(ngModel)] ="form.message" #message = "ngModel"></textarea><br>
+            </div>
+
+            <div class="text-center">
+            <button class="btn btn-primary btn-block">
+              SUBMIT
+            </button><br><br><br>
+            </div>
+          </form>
+        </div>
+      </div>
+  
